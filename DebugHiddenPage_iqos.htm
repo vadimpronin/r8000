@@ -8,7 +8,7 @@
 function init()
 {
     var cf = document.forms[0];
-    var brcm_speedtest="<%2655%>";
+    var brcm_speedtest="<%2680%>";
     if ((cf.debug_in_process.value != ""))
     {
         cf.action_Start_Debug.disabled=true;
@@ -79,7 +79,7 @@ function show_textarea(option)
 
 <form id="target"  action=debug.cgi method="POST">
 <table border="0" width=100%>
-<input type="hidden" name="usb_storage_detected" value="<%2656%>">
+<input type="hidden" name="usb_storage_detected" value="<%2681%>">
 <tr>
     <td colspan=2>
     <div style="background-image:url('liteblue.gif');width:100%" style="display:block">&nbsp</div>
@@ -115,16 +115,16 @@ function show_textarea(option)
     <p><b>iQoS device detection debug information</b></p>
 	<button type="BUTTON" onclick="show_textarea(1)">get_all_user</button><button type="BUTTON" onclick="show_textarea(2)">get_dev_info</button><button type="BUTTON" onclick="show_textarea(3)">get_app_info</button><button type="BUTTON" onclick="show_textarea(4)">get_qos_info</button>
     <textarea id="get_all_user" cols="80" rows="30" style="display:none">
-	<%2657%>
+	<%2682%>
     </textarea>
     <textarea id="get_dev_info" cols="80" rows="30" style="display:none">
-	<%2658%>
+	<%2683%>
     </textarea>
     <textarea id="get_app_info" cols="80" rows="30" style="display:none">
-	<%2659%>
+	<%2684%>
     </textarea>
     <textarea id="get_qos_info" cols="80" rows="30" style="display:none">
-	<%2660%>
+	<%2685%>
     </textarea>
     </td>
 </tr>
@@ -139,7 +139,7 @@ function show_textarea(option)
 </tr>
     <input type="hidden" name="action_Capture_Packets" value="Capture_packet">
     <input type="hidden" name="action_trend_iqos" value="trend_iqos_debug_mode">
-    <input type="hidden" name="debug_in_process" value="<%2661%>">
+    <input type="hidden" name="debug_in_process" value="<%2686%>">
 	<input type="hidden" name="debug_hidden_page" value="iqos">
 </table>
 </form>

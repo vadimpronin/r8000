@@ -95,10 +95,10 @@ function check_restore()
 {
 	if(document.forms[0].mtenRestoreCfg.value.length == 0)
 	{
-		alert("<%437%>");
+		alert("<%455%>");
 		return false;
 	}
-	if(confirm("<%438%>"))
+	if(confirm("<%456%>"))
 		return true;
 	else
 		return false;
@@ -114,7 +114,7 @@ function check_restore()
 <form id="target"  method="POST" action="backup.cgi" ENCTYPE="multipart/form-data">
 <input type="hidden" name="buttonHit"><input type="hidden" name="buttonValue">
 <img class="subtop-image" src="<%62%>">
-<div class="subhead2"> <%392%></div>
+<div class="subhead2"> <%402%></div>
 <table border="0"    style="height:370px"  class="subhead2-table">
 
 
@@ -122,38 +122,38 @@ function check_restore()
 
 <tr><td colspan="2" height="12" ><div style="background-image:url('liteblue.gif');width:100%">&nbsp;</div></td></tr>
 <tr>
-	<td colspan="2"><a href="javascript:loadhelp('BAK_backup','save')" tabindex="-1"><b><%439%></b></a></td>
+	<td colspan="2"><a href="javascript:loadhelp('BAK_backup','save')" tabindex="-1"><b><%457%></b></a></td>
 </tr>
 <tr>
 
 	<td colspan="2" align="center">
-	&nbsp;&nbsp;&nbsp;<button type="BUTTON" value="<%440%>" name="Backup" class="button-rule" onclick="buttonClick(this,'<%440%>');window.location.href = 'NETGEAR_<%12%>.cfg';"><span class="roundleft_button">&nbsp;&nbsp; <%440%></span><span class="roundright_button">&nbsp;&nbsp;&nbsp;&nbsp;</span></button> 
+	&nbsp;&nbsp;&nbsp;<button type="BUTTON" value="<%458%>" name="Backup" class="button-rule" onclick="buttonClick(this,'<%458%>');window.location.href = 'NETGEAR_<%12%>.cfg';"><span class="roundleft_button">&nbsp;&nbsp; <%458%></span><span class="roundright_button">&nbsp;&nbsp;&nbsp;&nbsp;</span></button> 
 	</td>
 </tr>
 <tr><td colspan="2" height="12" ><div style="background-image:url('liteblue.gif');width:100%">&nbsp;</div></td></tr>
 <tr>
-	<td colspan="2"><a href="javascript:loadhelp('BAK_backup','restore')" tabindex="-1"><b><%441%></b></a></td>
+	<td colspan="2"><a href="javascript:loadhelp('BAK_backup','restore')" tabindex="-1"><b><%459%></b></a></td>
 </tr>
 <tr>
 	<td colspan="2" align="left">
 
 	<input type="file" name="mtenRestoreCfg" id="file" size="20" maxlength="1024" style="position:absolute;opacity:0;filter:alpha(opacity=0);" onchange="this.form.upfile.value=this.value.substr(this.value.lastIndexOf('\\')+1);" contentEditable=false onkeydown="return false;" onbeforeeditfocus="return false;" onpaste="return false;">
 	<input type="text" name="upfile" size="20" maxlength="1024" readonly >
-	&nbsp;&nbsp;&nbsp;<button type="button" value="browse"  class="button-rule" onclick="buttonClick(this,'browse');this.form.file.click();"><span class="roundleft_button">&nbsp;&nbsp; <%442%></span><span class="roundright_button">&nbsp;&nbsp;&nbsp;&nbsp;</span></button>	
+	&nbsp;&nbsp;&nbsp;<button type="button" value="browse"  class="button-rule" onclick="buttonClick(this,'browse');this.form.file.click();"><span class="roundleft_button">&nbsp;&nbsp; <%460%></span><span class="roundright_button">&nbsp;&nbsp;&nbsp;&nbsp;</span></button>	
 	</td>
 </tr>
 <tr>
-	<td colspan="2" align="center">&nbsp;&nbsp;&nbsp;<button TYPE="submit" value="<%443%>" name="mtenRestore" class="button-rule" onClick="buttonClick(this,'<%443%>');if(!check_restore()) return false;"><span class="roundleft_button">&nbsp;&nbsp; <%443%></span><span class="roundright_button">&nbsp;&nbsp;&nbsp;&nbsp;</span></button></td>
+	<td colspan="2" align="center">&nbsp;&nbsp;&nbsp;<button TYPE="submit" value="<%461%>" name="mtenRestore" class="button-rule" onClick="buttonClick(this,'<%461%>');if(!check_restore()) return false;"><span class="roundleft_button">&nbsp;&nbsp; <%461%></span><span class="roundright_button">&nbsp;&nbsp;&nbsp;&nbsp;</span></button></td>
 </tr>
 <tr><td colspan="2" height="12" ><div style="background-image:url('liteblue.gif');width:100%">&nbsp;</div></td></tr>
 
 
 <tr>
-	<td nowrap colspan="2"><a href="javascript:loadhelp('BAK_backup','revert')" tabindex="-1"><b><%444%></b></a></td>
+	<td nowrap colspan="2"><a href="javascript:loadhelp('BAK_backup','revert')" tabindex="-1"><b><%462%></b></a></td>
 
 </tr>
 <tr>
-	<td colspan="2" align="center">&nbsp;&nbsp;&nbsp;<button type="button" value="<%445%>" name="defaults" class="button-rule" onClick="buttonClick(this,'<%445%>');location.href='BAK_cfm.htm'"><span class="roundleft_button">&nbsp;&nbsp; <%445%></span><span class="roundright_button">&nbsp;&nbsp;&nbsp;&nbsp;</span></button></td>
+	<td colspan="2" align="center">&nbsp;&nbsp;&nbsp;<button type="button" value="<%463%>" name="defaults" class="button-rule" onClick="buttonClick(this,'<%463%>');location.href='BAK_cfm.htm'"><span class="roundleft_button">&nbsp;&nbsp; <%463%></span><span class="roundright_button">&nbsp;&nbsp;&nbsp;&nbsp;</span></button></td>
 </tr>
 <tr><td colspan="2" height="12" ><div style="background-image:url('liteblue.gif');width:100%">&nbsp;</div></td></tr>
 </table></td></tr>

@@ -40,27 +40,27 @@ $(window).load(function() {
     var form=document.forms[0];
 	var lang = form.curlang.value;
     //notification of R7000 full feature
-    <%303%>		
+    <%305%>		
 
-    <%304%>	
+    <%306%>	
 	//When the multilanguage droplsit switched to Japanese and Hungarian disappear. 
     if((isIE && isIE8 && lang == "Japanese") || (isIE && isIE8 && lang == "Hungarian"))
 	{
 	    //alert("no change");
 	}else
 	{
-    <%305%>	
+    <%307%>	
 		//alert("change");
 		$('#lang_menu_li').css("float", "right");
  	    $('#lang_menu_li').css("padding-right", "25px");
         $('#lang_menu_li').css("margin-bottom", "10px");
-    <%304%>	
+    <%306%>	
 	}
-    <%305%>	
+    <%307%>	
 
 
 	
-    if(<%306%>=="1" & 0)
+    if(<%308%>=="1" & 0)
     {
         if($('#firmware-update').hasClass("firmware-update-hint-long")) {
             $('#ModuleName').css("position", "relative");
@@ -105,8 +105,8 @@ $(window).load(function() {
 
      if (!chgBrsLang()) /* no page is loadded */
      {
-         if(<%307%>)
-            loadPage("<%308%>");
+         if(<%309%>)
+            loadPage("<%310%>");
          else
             loadPage("DashBoard.htm");     
      }
@@ -122,12 +122,12 @@ $(document).ready(function(){
 
     adjustPageLayout();
       
-    <%309%>;
+    <%311%>;
          
     liveMenuClick();
     advanceMenu();
     $('.subHeader').hide();
-    var pnpx = <%310%>
+    var pnpx = <%312%>
     if(pnpx == 1){        
         $("#AdvanceTab").click();
         $("#basic-pane").css("display","none");
@@ -264,7 +264,7 @@ function liveMenuClick()
          ev.preventDefault();
 
       }); 
-	  <%311%>
+	  <%313%>
 	  $('.basic-menu-eco-div').live("click", function(ev){  
          $('.menuActive').removeClass('menuActive');
          $(this).addClass('menuActive');
@@ -273,7 +273,7 @@ function liveMenuClick()
          ev.preventDefault();
 
       });
-	  <%312%>
+	  <%314%>
 
          
       $('.noSub').live("click",function(ev){              
@@ -718,7 +718,7 @@ function chgLang()
         var choice = form.choicelang.value;
         var auto_block = form.auto_block.value;      
         if (choice != gui_region){      
-                ret = confirm("<%313%> "+ gui_lang_local + ""+"<%314%> "+""+ choice + "?");
+                ret = confirm("<%317%> "+ gui_lang_local + ""+"<%318%> "+""+ choice + "?");
                 if(ret==1){
                     if($("#BasicTab").hasClass('current')){
                         loadPage("LANG_check_redirect.htm");
@@ -744,7 +744,7 @@ function chgBrsLang()
             if(auto_block == "0"){
 
                 if(gui_lang != brslang){
-                    ret = confirm("<%313%> "+ gui_lang_local + ""+"<%314%> "+""+ brslang + "?");
+                    ret = confirm("<%317%> "+ gui_lang_local + ""+"<%318%> "+""+ brslang + "?");
                     if(ret==1){
                         if($("#BasicTab").hasClass('current')){
                            loadPage("LANG_check_redirect2.htm");
@@ -812,10 +812,10 @@ function change_size()
         
     </td>
     <td style="text-align:right;padding-right:25px">
-        <button type="button" value="BUTTON"  onClick="gui_logout();" name="logout" class="button-rule" style="padding-left:10px" ><span class="roundleft_button">&nbsp;&nbsp;&nbsp;&nbsp;<%317%></span><span class="roundright_button">&nbsp;&nbsp;&nbsp;&nbsp;</span></button>
+        <button type="button" value="BUTTON"  onClick="gui_logout();" name="logout" class="button-rule" style="padding-left:10px" ><span class="roundleft_button">&nbsp;&nbsp;&nbsp;&nbsp;<%323%></span><span class="roundright_button">&nbsp;&nbsp;&nbsp;&nbsp;</span></button>
         <br><br style='line-height:8px'>
-        <b><%318%></b>
-        <br><%319%>
+        <b><%324%></b>
+        <br><%325%>
         </td>
 
 
@@ -824,22 +824,22 @@ function change_size()
 
 <table CELLPADDING=0 CELLSPACING=0 style="height:520px;width:100%;margin:0;padding:0">
 <form name="frmLanguage">
-<%320%>
-<%321%>
-    <input type="hidden" name="curlang" value="Auto"> 
-<%322%>
-<%323%>
-	<input type="hidden" name="curlang" value="<%9%>"> 
-<%324%>
-<%325%>
 <%326%>
-	<input type="hidden" name="curlang" value="<%9%>">
 <%327%>
-	<input type="hidden" name="local_srptlang" value="<%328%>">
-	<input type="hidden" name="srptlang" value="<%329%>">
+    <input type="hidden" name="curlang" value="Auto"> 
+<%328%>
+<%329%>
+	<input type="hidden" name="curlang" value="<%9%>"> 
+<%330%>
+<%331%>
+<%332%>
+	<input type="hidden" name="curlang" value="<%9%>">
+<%333%>
+	<input type="hidden" name="local_srptlang" value="<%334%>">
+	<input type="hidden" name="srptlang" value="<%335%>">
 	<input type="hidden" name="select_region" value="">
-        <input type="hidden" name="first_brs_lang" value="<%330%>"> 
-        <input type="hidden" name="auto_block" value="<%331%>">
+        <input type="hidden" name="first_brs_lang" value="<%336%>"> 
+        <input type="hidden" name="auto_block" value="<%337%>">
         <input type="hidden" name= "gui_lang" value="<%9%>">
         <input type="hidden" name= "gui_lang_local" value="">
       
@@ -896,75 +896,75 @@ function change_size()
 <div id="footer" class="footer">
 	<img class="footer_img" src="img/footer.gif">
 <div id="support">
-	<b> <%416%></b> &nbsp;
-<%260%>
-		<a target="_blank" href="http://downloadcenter.netgear.com/"><%417%></a> | 
-<%261%>
+	<b> <%432%></b> &nbsp;
 <%262%>
-                <a target="_blank" href="http://downloadcenter.netgear.com/"><%417%></a> |
+		<a target="_blank" href="http://downloadcenter.netgear.com/"><%433%></a> | 
 <%263%>
-
-<%272%>
-		<a target="_blank" href="http://documentation.netgear.com/wndr4000/enu/202-10781-01/index.htm"><%417%></a> |
-<%273%>
-
-<%274%>
-		<a target="_blank" href="http://documentation.netgear.com/wndr3700v3/enu/202-10985-01/index.htm"><%417%></a> |
-<%275%>
-
 <%264%>
-		<a target="_blank" href="<%418%>"><%417%></a> | 
+                <a target="_blank" href="http://downloadcenter.netgear.com/"><%433%></a> |
 <%265%>
 
+<%274%>
+		<a target="_blank" href="http://documentation.netgear.com/wndr4000/enu/202-10781-01/index.htm"><%433%></a> |
+<%275%>
+
+<%276%>
+		<a target="_blank" href="http://documentation.netgear.com/wndr3700v3/enu/202-10985-01/index.htm"><%433%></a> |
+<%277%>
+
 <%266%>
-		<a target="_blank" href="http://downloadcenter.netgear.com/"><%417%></a> | 
+		<a target="_blank" href="<%434%>"><%433%></a> | 
 <%267%>
 
 <%268%>
-		<a target="_blank" href="http://downloadcenter.netgear.com/"><%417%></a> | 
+		<a target="_blank" href="http://downloadcenter.netgear.com/"><%433%></a> | 
 <%269%>
 
 <%270%>
-		<a target="_blank" href="http://downloadcenter.netgear.com/"><%417%></a> | 
+		<a target="_blank" href="http://downloadcenter.netgear.com/"><%433%></a> | 
 <%271%>
 
-<%276%>
-		<a target="_blank" href="http://downloadcenter.netgear.com/"><%417%></a> |
-<%277%>
+<%272%>
+		<a target="_blank" href="http://downloadcenter.netgear.com/"><%433%></a> | 
+<%273%>
 
 <%278%>
-		<a target="_blank" href="<%418%>"><%417%></a> | 
+		<a target="_blank" href="http://downloadcenter.netgear.com/"><%433%></a> |
 <%279%>
+
 <%280%>
-		<a target="_blank" href="<%418%>"><%417%></a> | 
+		<a target="_blank" href="<%434%>"><%433%></a> | 
 <%281%>
 <%282%>
-		<a target="_blank" href="<%418%>"><%417%></a> | 
+		<a target="_blank" href="<%434%>"><%433%></a> | 
 <%283%>
 <%284%>
-		<a target="_blank" href="<%418%>"><%417%></a> | 
+		<a target="_blank" href="<%434%>"><%433%></a> | 
 <%285%>
 <%286%>
-		<a target="_blank" href="<%418%>"><%417%></a> | 
+		<a target="_blank" href="<%434%>"><%433%></a> | 
 <%287%>
 <%288%>
-		<a target="_blank" href="<%418%>"><%417%></a> | 
+		<a target="_blank" href="<%434%>"><%433%></a> | 
 <%289%>
 <%290%>
-		<a target="_blank" href="<%418%>"><%417%></a> | 
+		<a target="_blank" href="<%434%>"><%433%></a> | 
 <%291%>
 <%292%>
-		<a target="_blank" href="<%418%>"><%417%></a> | 
+		<a target="_blank" href="<%434%>"><%433%></a> | 
 <%293%>
-		<a target="_blank" href="<%423%>"><%424%></a> | 
+<%294%>
+		<a target="_blank" href="<%434%>"><%433%></a> | 
+<%295%>
+		<a target="_blank" href="<%439%>"><%440%></a> | 
 
 
-		<a target="_blank" href="<%425%>"><%426%></a>
+		<a target="_blank" href="<%441%>"><%442%></a>
 </div>
 <div id="search" align=right>
-	<b> <%428%> </b>
-	<input type="text" id="search_text" name="search" value="<%429%>" onkeypress="detectEnter('num',event);" onFocus="this.select();" >
-	<input id="search_button" class="search_button" type="button" name="dosearch" value="<%430%>" onClick="do_search();">
+	<b> <%444%> </b>
+	<input type="text" id="search_text" name="search" value="<%445%>" onkeypress="detectEnter('num',event);" onFocus="this.select();" >
+	<input id="search_button" class="search_button" type="button" name="dosearch" value="<%446%>" onClick="do_search();">
 </div>
 </div>
 </div>
@@ -988,10 +988,10 @@ function change_size()
    <img src="ajax-loader.gif" width="1" height="1" alt="">
    <img src="img/main-page-bottom.gif" width="1" height="1" alt="">
    <img src="img/gray-button.gif" width="1" height="1" alt="">
-    <input type="hidden" name="repeater" value="<%431%>">
-    <input type="hidden" name="repeater_an" value="<%432%>">
-    <input type="hidden" name="enable_apmode" value="<%433%>">   
-    <input type="hidden" name="enable_stamode" value="<%434%>">   
+    <input type="hidden" name="repeater" value="<%447%>">
+    <input type="hidden" name="repeater_an" value="<%448%>">
+    <input type="hidden" name="enable_apmode" value="<%450%>">   
+    <input type="hidden" name="enable_stamode" value="<%451%>">   
 </div>                                                
 <!-- This JavaScript snippet activates those tabs -->
 <script>
@@ -1000,7 +1000,7 @@ function change_size()
 $(function() {
 	// setup ul.tabs to work as tabs for each div  directly under div.panes
 	$("ul.tabs").tabs("> .pane");     
-        var pnpx = <%436%>
+        var pnpx = <%454%>
             if(pnpx == 1){           
             $("#AdvanceTab").click();
             $("#basic-pane").css("display","none");

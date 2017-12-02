@@ -421,7 +421,7 @@ function checkData()
 					}
 			}
 			/* Foxconn modified start, Kent Huang, 05/22/2012, replace wep_or_wps_v20 with tkip_or_wps_v20 */	
-			if (!confirm("<%1701%>")){
+			if (!confirm("<%1722%>")){
 				return false;
 			}
 			show_tkip_or_wps_v20_msg = true;
@@ -452,7 +452,7 @@ function checkData()
 			if (cf.security_type_2G.value == "WPA-PSK")
 			{
 				if (!show_tkip_or_wps_v20_msg) {
-					if (!confirm("<%1701%>")){
+					if (!confirm("<%1722%>")){
 						return false;
 					}
 				}
@@ -462,14 +462,14 @@ function checkData()
 */		
 			if(cf.passphrase.value.length < 8)
 			{
-				alert("<%1603%>");
+				alert("<%1621%>");
 				return false;    
 			}
 			if(cf.passphrase.value.length > 63)
 			{
 				if ( isHex(cf.passphrase.value) == false)
 				{
-					alert("<%1604%>");
+					alert("<%1622%>");
 					cf.passphrase.value = "";
 					return false;
 				}    
@@ -516,14 +516,14 @@ function checkData()
 		
 			if(cf.passphrase_an.value.length < 8)
 			{
-				alert("<%1603%>");
+				alert("<%1621%>");
 				return false;    
 			}
 			if(cf.passphrase_an.value.length > 63)
 			{
 				if ( isHex(cf.passphrase_an.value) == false)
 				{
-					alert("<%1604%>");
+					alert("<%1622%>");
 					cf.passphrase_an.value = "";
 					return false;
 				}    
@@ -562,14 +562,14 @@ function checkData()
 		    
 			    if(cf.passphrase_an_ap.value.length < 8)
 			    {
-				    alert("<%1603%>");
+				    alert("<%1621%>");
 				    return false;    
 			    }
 			    if(cf.passphrase_an_ap.value.length > 63)
 			    {
 				    if ( isHex(cf.passphrase_an_ap.value) == false)
 				    {
-					    alert("<%1604%>");
+					    alert("<%1622%>");
 					    cf.passphrase_an_ap.value = "";
 					    return false;
 				    }    
@@ -663,7 +663,7 @@ function chginterface()
     <tr>
       <td nowrap>Choose a Wireless Networks:</td>
       <td nowrap>
-          <select name="interface" size="1" onchange="chginterface()"><option <%2524%>>Wireless Networks (2.4Ghz b/g/n)</option><option <%2525%>>Wireless Networks (5Ghz n/ac)</option></select></td></tr>
+          <select name="interface" size="1" onchange="chginterface()"><option <%2549%>>Wireless Networks (2.4Ghz b/g/n)</option><option <%2550%>>Wireless Networks (5Ghz n/ac)</option></select></td></tr>
 
 <tr>
 <td colspan="2" >        
@@ -679,22 +679,22 @@ function chginterface()
     <tr>
       <td colspan="2"><a href="javascript:loadhelp('WLG_wireless','security')" tabindex="-1"><b><%125%></b></a></td></tr>
     <tr>
-        <td colspan="2"><input type="radio" name="security_type" value="Disable" <%2526%> onClick="securityCheck(0);"><%126%></td></tr>
+        <td colspan="2"><input type="radio" name="security_type" value="Disable" <%2551%> onClick="securityCheck(0);"><%126%></td></tr>
     <tr>
         <td colspan="2">
             <div id="wep_radio_2G" style="display: block;">
-                <input type="radio" name="security_type" value="WEP" <%2527%> onClick="securityCheck(0);"><%127%>
+                <input type="radio" name="security_type" value="WEP" <%2552%> onClick="securityCheck(0);"><%127%>
             </div>
         </td>
     </tr>    
 <!--
     <tr>
-        <td colspan="2"><input type="radio" name="security_type" value="WPA-PSK" <%2528%> onClick="securityCheck(0);" ><%129%></td></tr>
+        <td colspan="2"><input type="radio" name="security_type" value="WPA-PSK" <%2553%> onClick="securityCheck(0);" ><%129%></td></tr>
 -->
     <tr>
-        <td colspan="2"><input type="radio" name="security_type" value="WPA2-PSK" <%2529%> onClick="securityCheck(0);"><%130%></td></tr>
+        <td colspan="2"><input type="radio" name="security_type" value="WPA2-PSK" <%2554%> onClick="securityCheck(0);"><%130%></td></tr>
     <tr>
-        <td colspan="2"><input type="radio" name="security_type" value="AUTO-PSK" <%2530%> onClick="securityCheck(0);" ><%131%></td></tr>
+        <td colspan="2"><input type="radio" name="security_type" value="AUTO-PSK" <%2555%> onClick="securityCheck(0);" ><%131%></td></tr>
     <tr>
         <td colspan="2" background="liteblue.gif" height="12">&nbsp; </td></tr>
     </table>
@@ -772,9 +772,9 @@ function chginterface()
     <tr>
       <td colspan="2"><a href="javascript:loadhelp('WLG_wireless','security')" tabindex="-1"><b><%125%></b></a></td></tr>
     <tr>
-        <td colspan="2"><input type="radio" name="security_type_an" value="Disable" <%2531%> onClick="securityCheck(1);"><%126%></td></tr>
+        <td colspan="2"><input type="radio" name="security_type_an" value="Disable" <%2556%> onClick="securityCheck(1);"><%126%></td></tr>
 	<tr>
-        <td colspan="2"><input type="radio" name="security_type_an" value="WPA2-PSK" <%2532%> onClick="securityCheck(1);"><%130%></td></tr>
+        <td colspan="2"><input type="radio" name="security_type_an" value="WPA2-PSK" <%2557%> onClick="securityCheck(1);"><%130%></td></tr>
     <tr>
         <td colspan="2" background="liteblue.gif" height="12">&nbsp; </td></tr>
     </table>
@@ -803,7 +803,7 @@ function chginterface()
 <tr>
   <td colspan=2>
   <div id="enable_ap_mode" style="display: none;">
-  <INPUT TYPE="checkbox" NAME="enable_bridge_ap_mode" value="Enabled" <%2533%> onclick="enable_5g_ap_function();">
+  <INPUT TYPE="checkbox" NAME="enable_bridge_ap_mode" value="Enabled" <%2558%> onclick="enable_5g_ap_function();">
    Enable AP mode on another 5G radio
   </div>
   </td>
@@ -816,7 +816,7 @@ function chginterface()
     <tr>
       <td width="50%" align="left"><%119%>:</td>
       <td width="50%">
-        <input type="text" name="ssid_an_ap" value="<%2534%>" size="20" maxlength="32"></td></tr>
+        <input type="text" name="ssid_an_ap" value="<%2559%>" size="20" maxlength="32"></td></tr>
     <tr>
       
       <td colspan="2" background="liteblue.gif" height="12">&nbsp; </td></tr>
@@ -843,7 +843,7 @@ function chginterface()
     </tr> 
     <tr>
       <td nowrap="nowrap" colspan="2">&nbsp;&nbsp;<%152%>: </td>
-      <td nowrap="nowrap" colspan="2"><input type="text" name="passphrase_an_ap" size=20 maxLength=64 value="<%2535%>">&nbsp;&nbsp;<%154%></td></tr>
+      <td nowrap="nowrap" colspan="2"><input type="text" name="passphrase_an_ap" size=20 maxLength=64 value="<%2560%>">&nbsp;&nbsp;<%154%></td></tr>
     <tr>
       <td nowrap="nowrap" colspan="4" background="liteblue.gif" height="12">&nbsp; </td></tr>
     </table>
@@ -870,14 +870,14 @@ function chginterface()
   <input type="hidden" name="show_wps_alert" value="<%204%>">
   <input type="hidden" name="security_type_2G" value="<%205%>">
   <input type="hidden" name="security_type_5G" value="<%206%>">
-  <input type="hidden" name="security_type_5G_ap" value="<%2536%>">
+  <input type="hidden" name="security_type_5G_ap" value="<%2561%>">
   <input type="hidden" name="initAuthType" value="<%211%>">
   <input type="hidden" name="initDefaultKey" value="<%212%>">
   <input type="hidden" name="initAuthType_an" value="<%213%>">
   <input type="hidden" name="initDefaultKey_an" value="<%214%>">
   <input type="hidden" name="telec_dfs_ch_enable" value="<%217%>">  
-  <input type="hidden" name="enable_stamode" value="<%434%>">  
-  <input type="hidden" name="wireless_interface" value="<%2537%>">  
+  <input type="hidden" name="enable_stamode" value="<%451%>">  
+  <input type="hidden" name="wireless_interface" value="<%2562%>">  
   <%224%>
   <input type="hidden" name="fw_sku" value="SKU_WW">
   <%225%>

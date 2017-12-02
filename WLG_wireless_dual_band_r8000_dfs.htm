@@ -440,6 +440,10 @@ function initScrn()
         document.getElementById("wpa_radio_5g_2").style.display = "none";
    }
     fm.init_opmode_an_2.value = fm.opmode_an_2.selectedIndex.toString();
+
+    if((fm.wifi_5g_enable.value == "Disable") || (fm.wifi_5g_2_enable.value == "Disable" ))
+        fm.enable_5g_band_steering.disabled=true;;   /*don't grey out when doing post*/
+
     initialized=true;
 
 }
@@ -3536,6 +3540,9 @@ function getkey(e)
   <input type="hidden" name="wifi_dual_5g_band" value="<%237%>">  
   <input type="hidden" name="init_ssid_bc_an_2" value="<%189%>">
   <input type="hidden" name="init_opmode_an_2" value="">
+  <input type="hidden" name="wifi_5g_2_enable" value="<%240%>">
+  <input type="hidden" name="wifi_5g_enable" value="<%241%>">
+
 <a name="helpframe-anchor"></a>
 </form>
 

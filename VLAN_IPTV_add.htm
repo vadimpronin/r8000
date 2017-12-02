@@ -104,17 +104,17 @@ function checkData()
 
     if (cf.vlan_name.value.match( /[^\x21-\x7E]/ ) || cf.vlan_name.value == "" )
     {
-        msg+="<%3135%>\n";
+        msg+="<%3162%>\n";
         alert(msg);
         return false;
     }
     if ((!_isNumeric(cf.vlan_id.value)) || isNaN(vlan_id) || vlan_id > 4094 || vlan_id < 1) {
-        alert("<%3136%>");
+        alert("<%3163%>");
         return false;
     }
         
     if ((!_isNumeric(cf.vlan_prio.value)) || isNaN(vlan_prio) || vlan_prio > 7 || vlan_prio < 0) {
-        alert("<%3137%>");
+        alert("<%3164%>");
         return false;
     }
     while(typeof vlan_rule[i] != "undefined")
@@ -127,29 +127,29 @@ function checkData()
         i++;
     }
     if (conflict) {
-        alert("<%3138%> "+cf.vlan_name.value+" <%3139%>");
+        alert("<%3165%> "+cf.vlan_name.value+" <%3166%>");
         return false;
     }
-<%3140%>	    
+<%3167%>	    
     if(cf.vlan_ports_0.checked || cf.vlan_ports_1.checked || cf.vlan_ports_2.checked || cf.vlan_ports_3.checked || cf.vlan_ports_4.checked || cf.vlan_ports_5.checked || cf.vlan_ports_6.checked || cf.vlan_ports_7.checked )
     {
         if(cf.vlan_ports_0.checked && cf.vlan_ports_1.checked && cf.vlan_ports_2.checked && cf.vlan_ports_3.checked && cf.vlan_ports_4.checked && cf.vlan_ports_5.checked && cf.vlan_ports_6.checked && cf.vlan_ports_7.checked )
-<%3141%>	    
-<%3142%>	    
+<%3168%>	    
+<%3169%>	    
 
     if(cf.vlan_ports_0.checked || cf.vlan_ports_1.checked || cf.vlan_ports_2.checked || cf.vlan_ports_3.checked || cf.vlan_ports_4.checked || cf.vlan_ports_5.checked || cf.vlan_ports_6.checked || cf.vlan_ports_7.checked || cf.vlan_ports_8.checked || cf.vlan_ports_9.checked)
     {
         if(cf.vlan_ports_0.checked && cf.vlan_ports_1.checked && cf.vlan_ports_2.checked && cf.vlan_ports_3.checked && cf.vlan_ports_4.checked && cf.vlan_ports_5.checked && cf.vlan_ports_6.checked && cf.vlan_ports_7.checked && cf.vlan_ports_8.checked && cf.vlan_ports_9.checked)
-<%3143%>	    
+<%3170%>	    
 
         {
-            alert("<%3144%>");
+            alert("<%3171%>");
             return false;
         }
     }
     else
     {
-        alert("<%3145%>");
+        alert("<%3172%>");
         return false;
     }
 
@@ -170,12 +170,12 @@ function checkData()
 <input type="hidden" name="buttonHit"><input type="hidden" name="buttonValue">
 
 <img class="subtop-image" src="<%62%>">
-<div class="subhead2"> <%3146%></div>
+<div class="subhead2"> <%3173%></div>
 <table border="0"    style="height:370px"  class="subhead2-table">
 
 <tr align="left" valign="middle">
 <td  style="padding-top:10px;padding-bottom:10px" align="center" colspan="2" class="table-seperate-border">
-&nbsp;&nbsp;&nbsp;<button value="<%638%>" onClick="buttonClick(this,'<%638%>');if(!checkData()) return false;" type="SUBMIT" name="apply" class="button-apply" ><span class="roundleft_apply"><span class="add-icon">&nbsp;&nbsp;&nbsp;&nbsp; <%638%></span></span><span class="roundright_apply">&nbsp;&nbsp;&nbsp;&nbsp;</span></button>&nbsp;&nbsp;&nbsp;<button value="<%66%>" onClick="buttonClick(this,'<%66%>');location.href='VLAN_IPTV.htm'" type="Button" name="cancel" class="button-rule" ><span class="roundleft_button"><span class ="cancel-icon">&nbsp;&nbsp;&nbsp;&nbsp;<%67%></span></span><span class="roundright_button">&nbsp;&nbsp;&nbsp;&nbsp;</span></button>
+&nbsp;&nbsp;&nbsp;<button value="<%658%>" onClick="buttonClick(this,'<%658%>');if(!checkData()) return false;" type="SUBMIT" name="apply" class="button-apply" ><span class="roundleft_apply"><span class="add-icon">&nbsp;&nbsp;&nbsp;&nbsp; <%658%></span></span><span class="roundright_apply">&nbsp;&nbsp;&nbsp;&nbsp;</span></button>&nbsp;&nbsp;&nbsp;<button value="<%66%>" onClick="buttonClick(this,'<%66%>');location.href='VLAN_IPTV.htm'" type="Button" name="cancel" class="button-rule" ><span class="roundleft_button"><span class ="cancel-icon">&nbsp;&nbsp;&nbsp;&nbsp;<%67%></span></span><span class="roundright_button">&nbsp;&nbsp;&nbsp;&nbsp;</span></button>
 </td>
 </tr>
 
@@ -188,21 +188,21 @@ function checkData()
 <table border="0"   width="100%">
 
 <tr>
-    <td nowrap><%3125%></td>
+    <td nowrap><%3152%></td>
     <td width="50%" align="left" class="num"><input type="text" name="vlan_name" class="num" size="15" maxlength="10"></td>
 </tr>
 <tr>
-    <td nowrap><%3126%></td>
+    <td nowrap><%3153%></td>
     <td width="50%" align="left">
         <input type="text" name="vlan_id" size="10" maxlength="4">
-    <%3147%>
+    <%3174%>
     </td>
 </tr>
 <tr>
-    <td nowrap><%3127%></td>
+    <td nowrap><%3154%></td>
     <td width="50%" align="left">
         <input type="text" name="vlan_prio" size="10" maxlength="1" value="0">
-    <%3148%>
+    <%3175%>
     </td>
 </tr>
 <tr><td>&nbsp;</td></tr>
@@ -214,15 +214,15 @@ function checkData()
     <input type="checkbox" name="vlan_ports_3">Port4
     <input type="checkbox" name="vlan_ports_4">WiFi-2.4G
     <input type="checkbox" name="vlan_ports_5">WiFi-5G
-<%3149%>
+<%3176%>
     <span id="guest_1">
     <input type="checkbox" name="vlan_ports_6">Guest-2.4G
     </span>
     <span id="guest_2">
     <input type="checkbox" name="vlan_ports_7">Guest-5G
     </span>
-<%3150%>
-<%3151%>
+<%3177%>
+<%3178%>
     <input type="checkbox" name="vlan_ports_6">WiFi-5G-2
     <span id="guest_1">
     <input type="checkbox" name="vlan_ports_7">Guest-2.4G
@@ -233,7 +233,7 @@ function checkData()
     <span id="guest_3">
     <input type="checkbox" name="vlan_ports_9">Guest-5G-2
     </span>
-<%3152%>
+<%3179%>
 
    </td>
     
@@ -254,7 +254,7 @@ function checkData()
     <span class="subhead2-text" style="text-decoration:underline;float:right;padding-right:10px" onclick="showHelpIframe();" onmouseover="changeCursorPointer();" onmouseout="changeCursorDefault();"> <%198%> </span>
       </div>
 
-<input type="hidden" name="vlan_rule_name" value="<%3132%>">
+<input type="hidden" name="vlan_rule_name" value="<%3159%>">
 <INPUT name="vlan_mode" type="hidden" value="add">
   <input type="hidden" name="wifi_dual_5g_band" value="<%237%>">
 

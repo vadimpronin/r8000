@@ -141,7 +141,24 @@ div#preloaded-images {
 }  
 
 
+.circle-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 200px;
+    top: 200px;
+    width: 480px; /* Full width */
+    height: 430px; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(255,255,255); /* Fallback color */
+	font-family:Arial; 	
+    
+}
 
+
+.gray{
+    background-color:#E5E5E5;
+}
 
 
 #top{_width: 1440px; min-width: 820px; height: 97px; position: absolute; left: 20px; right: 20px; }
